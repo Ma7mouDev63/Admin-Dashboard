@@ -11,9 +11,34 @@ body {
 }
 
 #sidebar {
+    display: grid;
     background-color: rgb(12, 139, 212);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    grid-template-rows: repeat(3, min-content);
+    gap: 5vh;
+}
+
+#sidebar div {
+    color: white;
+    font-weight: bold;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+}
+
+#sidebar div div { 
+    gap: 20px;
+    grid-auto-flow: column;
+    padding: 10px 20px;
+}
+
+#dashboard {
+    font-size: 1.6rem;
+    justify-content: start;
+    gap: 20px;
+    grid-auto-flow: column;
+    padding: 10px 20px;
 }
 
 #header {
